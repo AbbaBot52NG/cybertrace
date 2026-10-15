@@ -1,0 +1,35 @@
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberTrace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🕵️ CyberTrace</h1>
+    <p class="sub">Guess Your idea / Mu yi hasashen basira</p>
+
+    <section class="notice">
+      <h2> Privacy Notice </h2>
+      <ul>
+        <li><b>Guess button:</b> sends a request from your browser to <b>founder</b> (a third-party service), which sees your dream and returns an <i>estimated</i> country, region and city. / Wannan yana tura buƙata zuwa , wanda zai taimaka da sabon ilimi.</li>
+        <li><b>Reveal button:</b> asks your mind what inside. / Tanbayi kanka maikakeson zama a rayuwa.</li>
+        <li>offers <b>saves or sends </b> else. Results show only on your screen. / Babu ajiya; sakamako yana nan a wayarka kawai.</li>
+      </ul>
+    </section>
+
+    <button id="guessBtn" class="btn">🔮 Guess My big idea(real)</button>
+    <div id="guessOut" class="out" hidden></div>
+
+    <button id="gpsBtn" class="btn alt">📍 Reveal My Real idea (real)</button>
+    <div id="gpsOut" class="out" hidden></div>
+
+    <p class="small">your dreams / duba Burkina.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+EOF
